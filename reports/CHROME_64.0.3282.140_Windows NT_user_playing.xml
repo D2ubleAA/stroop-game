@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="user_playing"
+    errors="0" failures="0" hostname="" id="" package="user_playing" skipped="0"
+    tests="1" time="5.132" timestamp="Tue, 06 Mar 2018 16:32:27 GMT">
+  
+    <testcase name="The User can finish the game and its score is shown on a final message" classname="user_playing" time="5.132" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

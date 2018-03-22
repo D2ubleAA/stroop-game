@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+    crossorigin="anonymous">
+  <script src="bundle.js"></script>
+</head>
+
+<body class="container">
+  <div class="row">
+    <div class="col-12 col-lg-6 col-md-6 col-sm-8 stroop-game stroop-game__box-game">
+      <div class="stroop-game__title-box">
+        <div class="title-box__level-label">
+          <span>Nivel:</span>
+          <span id="level-text"></span>
+        </div>
+
+        <div class="title-box__score-label">
+          <span>Puntuación: </span>
+          <span id="score-text"></span>
+        </div>
+      </div>
+
+      <div class="stroop-game__display-box">
+        <div class="display-box__progress-bar-box">
+          <div id="progress-bar"
+            class="display-box__progress-bar">
+            <div id="progress-fill"
+              class="display-box__progress-bar-fill">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="display-box__current-word">
+          <div id="current-word"
+            class="current-word">¡Bienvenido!<br>¿Te animas a jugar? :)</div>
+        </div>
+
+        <div class="display-box__available-options">
+          <button id="option-button"
+            class="option-button"></button>
+          <button id="option2-button"
+            class="option2-button"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-lg-6 col-md-6 col-sm-8 stroop-game__main-buttons-box">
+      <button id="new-button"
+        class="new-button">¡Vamos a jugar!</button>
+      <button id="new-button-robot"
+        class="new-button-robot">¡Que juegue el robot!</button>
+    </div>
+  </div>
+</body>
+
+</html>

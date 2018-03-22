@@ -1,0 +1,115 @@
+DIV {
+  box-sizing: border-box;
+}
+
+BUTTON:focus {
+  outline: none;
+  cursor: pointer;
+}
+
+BUTTON:hover {
+  background-color: rgba(black, .4) !important;
+  cursor: pointer;
+}
+
+.option-button:focus,
+.option2-button:focus {
+  outline: 3px dashed black;
+  outline-offset: 15px;
+}
+
+.stroop-game {
+  height: 450px;
+  border: 2px solid black;
+  margin: 50px auto auto auto;
+  flex-direction: column;
+  .stroop-game__title-box {
+    height: 15%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    SPAN {
+      font-weight: bold;
+    }
+    .title-box__time-label {
+      visibility: hidden;
+    }
+  }
+  .stroop-game__display-box {
+    height: 85%;
+    .display-box__progress-bar-box {
+      height: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .display-box__progress-bar {
+        border: 2px solid black;
+        width: 50%;
+        height: 22px;
+        display: flex;
+        justify-content: flex-start;
+        .display-box__progress-bar-fill {
+          background-color: greenyellow;
+          height: 100%;
+        }
+      }
+    }
+    .display-box__current-word {
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      .current-word {
+        font-weight: bold;
+        font-size: 2em;
+      }
+    }
+    .display-box__available-options {
+      height: 40%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .option-button,
+      .option2-button {
+        width: 30%;
+        height: 60%;
+        font-weight: bold;
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        transition: background-color .3s;
+        &[disabled] {
+          cursor: not-allowed;
+          background-color: rgba(black, .4);
+        }
+      }
+    }
+  }
+}
+
+.stroop-game__main-buttons-box {
+  height: 25%;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .new-button-robot,
+  .new-button {
+    font-weight: bold;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: black;
+    transition: background-color .3s;
+    &:hover:not(BUTTON[disabled]) {
+      cursor: pointer;
+      background-color: rgba(black, .4);
+    }
+  }
+}
